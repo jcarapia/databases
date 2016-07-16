@@ -11,18 +11,18 @@ dbConnection = mysql.createConnection({
       database: "chat"
     });
 
-dbConnection.connect(function(data, err){
+dbConnection.connect(function(err){
  
   if(err){
     console.log('Error connecting to DB');
-    return;
   }
   console.log('Connection established');
 });
 
-dbConnection.end(function(err){
 
-})
+// dbConnection.end(function(err){
+
+// })
 
 module.exports = dbConnection;
 //console.log(module.exports)

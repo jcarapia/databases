@@ -1,17 +1,13 @@
-CREATE DATABASE chat;
+
 
 USE chat;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
-);
+  
+ `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`id`)
+)
 
-/* Create other tables and define schemas for them here! */
-
-
-
-
-/*  Execute this file from the command line by typing:
- *    mysql -u root < server/schema.sql
- *  to create the database and the tables.*/
 
